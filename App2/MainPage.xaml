@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to the Number generator and encryptor" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Enter the lower and upper boundries for random number" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Lower"/>
+        <Entry x:Name="lower" Keyboard="Numeric"/>
+        
+        <Label Text="upper"/>
+        <Entry x:Name="upper" Keyboard="Numeric"/>
+        
+        <Button x:Name="button1" Text="Generate" Clicked="button1_Clicked"></Button>
+        <Label x:Name="numberInfo" TextColor="Red" Text=""/>
+        <Label x:Name="Number" Text="Number"/>
+        <Button x:Name="button2" Text="Encrypt" Clicked="button2_Clicked"></Button>
+        <Label x:Name="encryptedInfo" TextColor="Red" Text=""/>
+        <Label x:Name="Encrypted" Text="Encrypted"/>
+    </StackLayout>
+
+</ContentPage>
